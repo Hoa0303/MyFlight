@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const ticketsRouter = require("./app/routes/ticket.route");
+const bookticket = require("./app/routes/bookticket.route");
 const typeRouter = require("./app/routes/type.route");
 const usersRouter = require("./app/routes/user.route");
 const airlineRouter = require("./app/routes/airline.route");
@@ -15,6 +16,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/api/tickets", ticketsRouter);
+app.use("/api/bookticket", bookticket);
 app.use("/api/type", typeRouter);
 app.use("/api/users", usersRouter);
 app.use("/api/airline", airlineRouter);

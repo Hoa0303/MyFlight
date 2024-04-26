@@ -14,6 +14,7 @@ class TicketService {
             MaDatVe: payload.MaDatVe,
             IdDatVe: payload.IdDatVe,
             MaLoai: payload.MaLoai,
+            Gia: payload.Gia,
             IdLoai: payload.IdLoai,
             ChoNgoi: payload.ChoNgoi,
         };
